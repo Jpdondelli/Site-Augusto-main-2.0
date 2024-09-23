@@ -241,6 +241,21 @@ body {
         height: auto;
         padding-top: 10px;
     }
+
+    .whatsapp__button {
+        display: flex;
+    }
+    
+    .whatsapp__button__icon {
+        position: fixed;
+        background-color: #247510;
+        border: 2px solid #247510;
+        border-radius: 10px;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        padding: 10px;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -276,5 +291,20 @@ body {
     .whatsapp__button__icon {
         width: 50px;
         height: 50px;
+    }
+
+    .whatsapp__button {
+        display: flex;
+    }
+    
+    .whatsapp__button__icon {
+        position: fixed;
+        background-color: #247510;
+        border: 2px solid #247510;
+        border-radius: 10px;
+        bottom: 20px;
+        right: 20px;
+        z-index: 1000;
+        padding: 10px;
     }
 }
