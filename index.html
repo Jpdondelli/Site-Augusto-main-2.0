@@ -6,7 +6,8 @@
     <title>Vidros & Box Dois Córregos</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="slide.css">
-    <script src="slide.js" defer></script>
+    <link rel="stylesheet" href="glide.core.min.css">
+    <link rel="stylesheet" href="glide.theme.min.css">
 </head>
 <body>
     <header class="header">  
@@ -61,45 +62,36 @@
         </nav>
     </header>
 
+    <div class="container">
+        <div class="glide">
+            <div class="glide__track" data-glide-el="track">
+              <ul class="glide__slides">
+                <li class="glide__slide"><img src="Imagens/pexels-vecislavas-popa-1571462.jpg" alt="" class="images_carousel"></li>
+                <li class="glide__slide"><img src="Imagens/pexels-christa-grover-1910472.jpg" alt="" class="images_carousel"></li>
+                <li class="glide__slide"><img src="Imagens/pexels-jean-van-der-meulen-1454804.jpg" alt="" class="images_carousel"></li>
+              </ul>
+            </div>
+          </div>
+          <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">></button>
+          </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+        const config = {
+            type: 'carousel',
+        }
+        new Glide('.glide', config).mount()
+      </script>
+
+
     <div>
         <a target="_blank" href="https://wa.link/mr2rgx" class="whatsapp__button">
             <img src="./whatsapp_icon/icons8-whatsapp-48.png" class="whatsapp__button__icon">
         </a>
     </div>
 
-    <section id="portfolio" class="slider">
-        <div class="slider__content">
-            <input type="radio" name="btn_radio" id="radio1">
-            <input type="radio" name="btn_radio" id="radio2">
-            <input type="radio" name="btn_radio" id="radio3">
-
-            <div class="all">
-                <div class="slide__box first">
-                    <img class="img__desktop" src="./Imagens/pexels-christa-grover-1910472.jpg" alt="slide 1">
-                </div>
-                <div class="slide__box">
-                    <img class="img__desktop" src="./Imagens/pexels-jean-van-der-meulen-1454804.jpg" alt="slide 2">
-                </div>
-                <div class="slide__box">
-                    <img class="img__desktop" src="./Imagens/pexels-joey-galang-342800.jpg" alt="slide 3">
-                </div>
-
-            </div>
-
-            <div class="nav__auto">
-                <div class="auto__btn__1"></div>
-                <div class="auto__btn__2"></div>
-                <div class="auto__btn__3"></div>
-            </div>
-
-            <div class="nav__manual">
-                <label for="radio1" class="manual__btn"></label>
-                <label for="radio2" class="manual__btn"></label>
-                <label for="radio3" class="manual__btn"></label>
-            </div>
-
-        </div>
-    </section>
     
     <div id="about" class="second">
         <img src="./Imagens/icons8-comunicação-100.png" class="second__img">
@@ -122,7 +114,7 @@
             <h1>Piracicaba - SP</h1>
         </div>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3680.4805019131218!2d-47.660924824489015!3d-22.710375130881445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c630491a5806e9%3A0xcf0e9ad439b51f33!2sVidra%C3%A7aria%20%26%20Box%20Dois%20C%C3%B3rregos!5e0!3m2!1spt-BR!2sbr!4v1726670554969!5m2!1spt-BR!2sbr" width="1400px" height="400px" style="border:0;" allowfullscreen="" loading="lazy" padding-bottom="40px"referrerpolicy="no-referrer-when-downgrade" class="iframe"></iframe>
-         </div>
+    </div>
 
     <main class="main">
         <img class="main__img" src="./Imagens/pexels-bilal-mansuri-17840522.jpg" alt="imagem_primária">

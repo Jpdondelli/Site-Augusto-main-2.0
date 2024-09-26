@@ -97,6 +97,22 @@ body {
     object-fit: cover;
 }
 
+.container{
+    height: 70vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+    z-index: 9999999;
+}
+
+.images_carousel{
+    height: 60vh;
+    width: 90%;
+    padding-left: 100px;
+}
+
 .container__button {
     display: none;
 }
