@@ -165,6 +165,10 @@ body {
     text-align: center;
 }
 
+.iframe{
+    overflow: hidden;
+}
+
 .fourth {
     display: flex;
     flex-direction: column;
@@ -272,6 +276,11 @@ body {
         z-index: 1000;
         padding: 10px;
     }
+
+    .iframe{
+        overflow: hidden;
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -322,5 +331,10 @@ body {
         right: 20px;
         z-index: 1000;
         padding: 10px;
+
+        .iframe{
+            overflow: hidden;
+            width: 100%;
+        }
     }
 }
